@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tanmoy Biswas — Data Analytics, Python, SQL and professional projects.">
+  <meta property="og:title" content="Tanmoy Biswas | Portfolio">
+  <meta property="og:description" content="Data Analytics, Python, SQL and professional projects.">
+  <meta property="og:type" content="website">
+  <title>Tanmoy Biswas | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="logo" href="#home">Tanmoy<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Welcome to my portfolio</p>
+          <h1>Hi, I'm <span>Tanmoy Biswas.</span></h1>
+          <p class="intro">I am building my skills in data analytics and technology, with a background in administration and an academic foundation in electronics and international business.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">Explore my projects</a>
+            <!-- Replace # with your actual resume PDF path, e.g. assets/Tanmoy_Biswas_CV.pdf -->
+            <a class="btn btn-outline" href="https://github.com/tanmaybiswas007/my-portfolio/blob/main/assets/docs/EuroPass%20CV.pdf" aria-label="Add your resume PDF link">Download my Resume</a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <!-- File names on GitHub Pages are case-sensitive: profile.jpg is not the same as Profile.JPG -->
+          <img
+            src="https://github.com/tanmaybiswas007/my-portfolio/blob/main/assets/images/profile.jpg"
+            alt="Portrait of Tanmoy Biswas"
+            class="profile-photo"
+            width="150"
+            height="150"
+          >
+          <h2>Tanmoy Biswas</h2>
+          <p>Data Analytics · Technology · Administration</p>
+          <div class="quick-facts">
+            <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Excel</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">A little about me</p><h2>About Me</h2></div>
+        <div class="about-grid">
+          <div class="panel">
+            <p>I hold a Bachelor of Technology from West Bengal University of Technology and a Post Graduate Diploma in International Business Operations from Indira Gandhi National Open University. My background also includes vocational training as an Electrician under the Directorate General of Training.</p>
+            <p>From April 2020 to April 2023, I worked as an Office Assistant at RSSM Infra Private Limited, supporting administrative coordination, meeting scheduling, documentation and record management.</p>
+          </div>
+          <div class="panel">
+            <h3>What I am working towards</h3>
+            <p>Developing practical data analytics skills and presenting my learning through projects, reports and professional certifications. This portfolio will grow as I add verified work and credentials.</p>
+            <div class="skill-list"><span class="skill">Data Analysis</span><span class="skill">Problem Solving</span><span class="skill">Documentation</span><span class="skill">Coordination</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Tools and capabilities</p><h2>Skills</h2><p>Skill levels are shown only where stated in my current CV or learning profile.</p></div>
+        <div class="panel">
+          <div class="skill-list">
+            <span class="skill">Python — Intermediate</span>
+            <span class="skill">SQL — Basic</span>
+            <span class="skill">Microsoft Office</span>
+            <span class="skill">Basic Computer Repair</span>
+            <span class="skill">Excel</span>
+            <span class="skill">Power BI</span>
+          </div>
+          <!-- Visitors can see this note. Remove it once your skills list is final. -->
+          <p class="note">Update or remove any skill above to match your current proficiency. Excel and Power BI are included as portfolio skill areas and can be refined when you upload your latest details.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Selected work</p><h2>Projects</h2><p>Add your project descriptions, screenshots and repository links here.</p></div>
+        <div class="filter-row" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="python" type="button">Python</button>
+          <button class="filter-btn" data-filter="excel" type="button">Excel</button>
+          <button class="filter-btn" data-filter="sql" type="button">SQL</button>
+          <button class="filter-btn" data-filter="powerbi" type="button">Power BI</button>
+        </div>
+        <div class="cards" id="projectCards">
+          <article class="card project-card" data-category="excel">
+            <span class="tag">Excel · Analysis</span>
+            <h3>Financial Report Analysis</h3>
+            <p>Course project. Add the dataset, analysis questions, methods, key findings and dashboard or report screenshots.</p>
+            <a class="text-link" href="#" aria-label="Add project link">Add project link →</a>
+          </article>
+          <article class="card project-card" data-category="python">
+            <span class="tag">Python · Data analysis</span>
+            <h3>Project coming soon</h3>
+            <p>Replace this card with a Python project, including its objective, tools, process and results.</p>
+            <a class="text-link" href="#" aria-label="Add project link">Add GitHub link →</a>
+          </article>
+          <article class="card project-card" data-category="sql">
+            <span class="tag">SQL · Data analysis</span>
+            <h3>Project coming soon</h3>
+            <p>Showcase a SQL project with sample queries, the problem you solved and a link to the code.</p>
+            <a class="text-link" href="#" aria-label="Add project link">Add project link →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Learning and credentials</p><h2>Certificates &amp; Badges</h2><p>Link each credential to its public verification page where available.</p></div>
+        <div class="cards">
+          <article class="card">
+            <span class="tag">Credly</span><h3>Credly badges</h3>
+            <p>See my Credly Badges.</p>
+            <a class="text-link" href="https://www.credly.com/users/tanmoy-biswas.712bbb63/badges/credly" target="_blank" rel="noopener">My Credly Badges→</a>
+          </article>
+          <article class="card">
+            <span class="tag">LinkedIn</span><h3>Professional learning</h3>
+            <p>Have a look at my LinkedIn Profile.</p>
+            <a class="text-link" href="https://www.linkedin.com/in/tanmoybiswas007/" target="_blank" rel="noopener">My Linkedin →</a>
+          </article>
+          <article class="card">
+            <span class="tag">Other certificates</span><h3>Additional credentials</h3>
+            <p>Projects that I have done and currently doing.</p>
+            <a class="text-link" href="https://www.kaggle.com/work" target="_blank" rel="noopener">My Keggle Projects →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">My background</p><h2>Experience &amp; Education</h2></div>
+        <div class="two-col">
+          <div class="panel">
+            <h3 class="panel-title">Work experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h3>Office Assistant — RSSM Infra Private Limited</h3>
+                <div class="meta">April 2020 – April 2023 · Hooghly, West Bengal, India</div>
+                <ul>
+                  <li>Coordinated organisational and administrative activities.</li>
+                  <li>Scheduled meetings and supported coordination requirements.</li>
+                  <li>Prepared and maintained land records, agreements and deeds.</li>
+                  <li>Managed organisational records and information, including monthly expenses.</li>
+                  <li>Supported communication and coordination within the organisation.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <h3 class="panel-title">Education &amp; training</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h3>Bachelor of Technology</h3>
+                <div class="meta">2011 – 2015 · West Bengal University of Technology</div>
+                <p>Academic areas included electronics, digital systems, microprocessors, communication, signals and systems, and C programming.</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Post Graduate Diploma in International Business Operations</h3>
+                <div class="meta">2017 – 2018 · IGNOU</div>
+                <p>Coursework included international business, marketing, foreign trade, export-import procedures, logistics and finance.</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Electrician (NSQF)</h3>
+                <div class="meta">2019 – 2023 · Directorate General of Training</div>
+                <p>Training covered electrical safety, wiring, electrical machines, transformers, power electronics and renewable energy basics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Writing and ideas</p><h2>Articles &amp; Publications</h2><p>Share tutorials, project walkthroughs and lessons learned on Medium.</p></div>
+        <div class="panel">
+          <h3>Substack Articles & Posts</h3>
+          <p>Visit my Substack Profile.</p>
+          <a class="text-link" href="https://substack.com/@biswas007" target="_blank" rel="noopener">My Substack Profile →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div><h2>Let's connect.</h2><p>For professional opportunities, collaboration or questions about my projects.</p></div>
+          <a class="btn" href="mailto:biswas.tanmay007@gmail.com">Email me</a>
+        </div>
+        <div class="skill-list contact-links">
+          <a class="skill" href="https://www.linkedin.com/in/tanmoybiswas007/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="skill" href="https://github.com/tanmaybiswas007" target="_blank" rel="noopener">GitHub</a>
+          <a class="skill" href="https://substack.com/@biswas007" target="_blank" rel="noopener">Substack</a>
+          <a class="skill" href="https://www.credly.com/users/tanmoy-biswas.712bbb63/badges/credly" target="_blank" rel="noopener">Credly</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">© <span id="year"></span> Tanmoy Biswas. Built with HTML, CSS and JavaScript.</div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
