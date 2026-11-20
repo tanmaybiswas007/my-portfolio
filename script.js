@@ -80,6 +80,37 @@ document.addEventListener("DOMContentLoaded", () => {
             rootMargin: "-35% 0px -55% 0px"
         });
 
+        // Typewriter animation for navigation logo
+const logoText = "Tanmoy Biswas";
+const typingElement = document.getElementById("typing-logo");
+
+let charIndex = 0;
+let isDeleting = false;
+
+function typeLogo() {
+
+    typingElement.textContent = logoText.substring(0, charIndex);
+
+    if (!isDeleting && charIndex < logoText.length) {
+
+        charIndex++;
+        setTimeout(typeLogo, 180);
+
+    } else if (isDeleting && charIndex > 0) {
+
+        charIndex--;
+        setTimeout(typeLogo, 100);
+
+    } else {
+
+        isDeleting = !isDeleting;
+        setTimeout(typeLogo, 800);
+
+    }
+}
+
+typeLogo();
+
         sections.forEach(section => observer.observe(section));
     }
 
