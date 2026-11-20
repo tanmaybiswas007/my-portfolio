@@ -544,3 +544,14 @@ footer {
     transition: none !important;
   }
 }
+
+.company-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.company-link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
